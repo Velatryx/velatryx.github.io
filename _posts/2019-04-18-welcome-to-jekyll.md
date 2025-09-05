@@ -1,6 +1,6 @@
 ---
 title: "Welcome to my Website!"
-
+date: { % last-modified-at % }
 categories:
   - blog
 tags:
