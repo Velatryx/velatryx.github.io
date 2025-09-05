@@ -1,7 +1,7 @@
 ---
 title: "Welcome to my Website!"
-date: 05-01-2025
-Last updated: {{ page.last_modified_at | date: "%Y-%m-%d" }}
+date: 05-09-2025
+
 
 categories:
   - blog
