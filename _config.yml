@@ -61,7 +61,7 @@ author:
 footer:
   links:
     - label: "tryhackme"
-      icon: "fab fa-fw fa-twitter-square"
+      icon: "/assets/images/Tryhackme--Streamline-Simple-Icons.png"
       url: "https://tryhackme.com/p/hoaX"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
