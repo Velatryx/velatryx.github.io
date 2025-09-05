@@ -1,6 +1,6 @@
 ---
 title: "Welcome to my Website!"
-Last modified: {{ page.last_modified_at | date: "%Y-%m-%d" }}
+lastmod: {{ page.last_modified_at }}
 
 
 categories:
