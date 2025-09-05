@@ -1,6 +1,6 @@
 ---
 title: "Welcome to my Website!"
-lastmod: {{ page.last_modified_at }}
+lastmod: 09/05/2025
 
 
 categories:
