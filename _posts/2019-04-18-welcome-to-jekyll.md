@@ -1,7 +1,6 @@
 ---
 title: "Welcome to my Website!"
 date: 09/05/2025
-lastmod: 09/05/2025
 
 
 categories:
