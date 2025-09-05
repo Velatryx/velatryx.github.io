@@ -53,10 +53,10 @@ author:
       url: "https://tryhackme.com/p/hoaX"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
+      url: "https://github.com/Velatryx"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+      url: ""
 
 footer:
   links:
@@ -65,10 +65,10 @@ footer:
       url: "https://tryhackme.com/p/hoaX"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/velatryx"
+      url: "https://github.com/Velatryx"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+      url: ""
 
 defaults:
   # _posts
