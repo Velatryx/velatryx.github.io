@@ -1,6 +1,5 @@
 ---
 title: "Welcome to my Website!"
-date: {% last_modified_at %}
 
 categories:
   - blog
