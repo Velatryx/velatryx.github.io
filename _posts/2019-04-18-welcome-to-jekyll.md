@@ -1,6 +1,6 @@
 ---
 title: "Welcome to my FIRST blog!"
-date: 05-09-2025
+date: {% last_modified_at %}
 
 categories:
   - blog
