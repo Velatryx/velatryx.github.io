@@ -1,6 +1,6 @@
 ---
 title: "Welcome to my Website!"
-date: 05-09-2025
+date: {{ page.last_modified_at }}
 
 
 categories:
