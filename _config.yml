@@ -1,8 +1,8 @@
 # Welcome to Velatryx's Personal Website!
 title: /Velatryx
 email:
-description: >- # this means to ignore newlines until "baseurl:"
-  A curious creature who just created the website.
+description: A curious creature who just created the website. # this means to ignore newlines until "baseurl:"
+  
 github_username: Velatryx
 minimal_mistakes_skin: default
 search: true
