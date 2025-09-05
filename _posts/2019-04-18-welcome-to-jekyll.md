@@ -1,6 +1,6 @@
 ---
 title: "Welcome to my Website!"
-date: { % last-modified-at % }
+Last updated: {{ page.last_modified_at | date: "%Y-%m-%d" }}
 categories:
   - blog
 tags:
