@@ -1,30 +1,18 @@
 ---
-title: "Welcome to my FIRST blog!"
+title: "Welcome to my Website!"
 date: {% last_modified_at %}
 
 categories:
   - blog
 tags:
-  - Jekyll
-  - update
+  - Murax
+  - about-this
 ---
 
-You'll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+Thanks for visiting my website. As it is my first github 'project', I don't expect much. But still, I will be updating this website with posts, CTFs, writeups, and so much more!
 
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+You can visit my socials in main page.
+Feel free to reach out to me. 
 
-Jekyll also offers powerful support for code snippets:
+Linkedin: Murad Isgandarli
 
-```ruby
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-```
-
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
-
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
