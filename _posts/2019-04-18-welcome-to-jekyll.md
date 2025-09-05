@@ -1,5 +1,6 @@
 ---
 title: "Welcome to my Website!"
+date: {% last_modified_at %}
 last_modified_at: {% last_modified_at %}
 
 
