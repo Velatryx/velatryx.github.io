@@ -60,9 +60,9 @@ author:
 
 footer:
   links:
-    - label: "Twitter"
+    - label: "tryhackme"
       icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
+      url: "https://tryhackme.com/p/hoaX"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/"
@@ -78,7 +78,7 @@ defaults:
     values:
       layout: single
       author_profile: true
-      read_time: true
+      read_time: false
       comments: true
       share: true
       related: true
