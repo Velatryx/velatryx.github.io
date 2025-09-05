@@ -14,3 +14,4 @@ Feel free to reach out to me.
 
 Linkedin: Murad Isgandarli
 
+Last updated: {{ page.last_modified_at | date: "%Y-%m-%d" }}
