@@ -49,7 +49,7 @@ author:
       icon: "fas fa-fw fa-link"
       url: "https://"
     - label: "tryhackme"
-      icon: ! '[<img src="/assets/img/tryhackme.logo" alt="THM" style="height:20px;">]'
+      icon: <img src="/assets/img/{{ page.icon_name }}.logo" alt="{{ page.icon_name }}" style="height:20px;">
       url: "https://tryhackme.com/p/hoaX"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
@@ -61,7 +61,7 @@ author:
 footer:
   links:
     - label: "tryhackme"
-      icon: ! '[<img src="/assets/img/tryhackme.logo" alt="THM" style="height:20px;">]'
+      icon: <img src="/assets/img/{{ page.icon_name }}.logo" alt="{{ page.icon_name }}" style="height:20px;">
       url: "https://tryhackme.com/p/hoaX"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
