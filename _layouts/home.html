@@ -6,7 +6,7 @@ layout: archive
 
 <h3 class="archive__subtitle">Welcome</h3>
 <div class="entries-list">
-  {% assign welcome = site.pages | where: "title", "Welcome to my Website!" | first %}
+  {% assign welcome = site.pages | where: "title", "Welcome to my Website!" %}
   {% if welcome %}
     {% include documents-collection.html entries=welcome type="list" %}
   {% endif %}
