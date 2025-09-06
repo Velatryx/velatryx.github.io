@@ -6,6 +6,7 @@ date: 05/09/2025
 categories:
   - Welcome
 tags:
+  - Post Formats
   - whoami
 ---
 
