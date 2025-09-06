@@ -4,16 +4,16 @@ layout: archive
 
 {{ content }}
 
-<h3 class="archive__subtitle">Welcome</h3>
+<h3 class="archive__subtitle">Featured</h3>
 <div class="entries-list">
-  {% assign welcome = site.pages | where: "title", "Welcome to my Website!" %}
-  {% if welcome %}
-    {% include documents-collection.html entries=welcome type="list" %}
-  {% endif %}
+  {% assign pinned_posts = site.posts | where_exp: "post", "post.pin == true" %}
+  {% include documents-collection.html entries=pinned_posts type="list" %}
 </div>
 
-<h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
+<h3 class="archive__subtitle">
+  {{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}
+</h3>
 <div class="entries-list">
-  {% assign posts = site.posts | slice: 0,3 %}
+  {% assign posts = site.posts | where_exp: "post", "post.pin != true" | slice: 0,3 %}
   {% include documents-collection.html entries=posts type="list" %}
 </div>
