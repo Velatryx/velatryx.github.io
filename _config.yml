@@ -1,7 +1,7 @@
 # Welcome to Velatryx's Personal Website!
 title: /Velatryx
 email:
-description: A curious creature who just created the website. # this means to ignore newlines until "baseurl:"
+description: A curious creature who just created the website. 
   
 github_username: Velatryx
 minimal_mistakes_skin: default
@@ -45,10 +45,10 @@ author:
   avatar : "/assets/images/profilepic.jpg"
   bio    : "A curious creature who just created this website!"
   links:
-    - label: "Website"
+    - label: "Linkedin"
       icon: "fas fa-fw fa-link"
-      url: "https://"
-    - label: "tryhackme"
+      url: "https://www.linkedin.com/in/murad-isgandarli-530973292/"
+    - label: "TryHackMe"
       image: "/assets/img/tryhackme.logo"
       url: "https://tryhackme.com/p/hoaX"
     - label: "GitHub"
@@ -60,7 +60,10 @@ author:
 
 footer:
   links:
-    - label: "tryhackme"
+    - label: "Linkedin"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/murad-isgandarli-530973292/"
+    - label: "TryHackMe"
       image: "/assets/img/tryhackme.logo"
       url: "https://tryhackme.com/p/hoaX"
     - label: "GitHub"
@@ -68,7 +71,7 @@ footer:
       url: "https://github.com/Velatryx"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      url: ""
+      url: "https://instagram.com/"
 
 defaults:
   # _posts
