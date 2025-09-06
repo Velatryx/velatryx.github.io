@@ -4,17 +4,16 @@ layout: archive
 
 {{ content }}
 
-<h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
-
-{% if paginator %}
-  {% assign posts = paginator.posts %}
-{% else %}
-  {% assign posts = site.posts %}
-{% endif %}
-
-{% assign entries_layout = page.entries_layout | default: 'list' %}
-<div class="entries-{{ entries_layout }}">
-  {% include documents-collection.html entries=posts type=entries_layout %}
+<h3 class="archive__subtitle">Welcome</h3>
+<div class="entries-list">
+  {% assign welcome = site.pages | where: "title", "Welcome" | first %}
+  {% if welcome %}
+    {% include documents-collection.html entries=welcome type="list" %}
+  {% endif %}
 </div>
 
-{% include paginator.html %}
+<h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
+<div class="entries-list">
+  {% assign posts = site.posts | slice: 0,3 %}
+  {% include documents-collection.html entries=posts type="list" %}
+</div>
