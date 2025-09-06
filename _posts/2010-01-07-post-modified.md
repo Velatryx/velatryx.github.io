@@ -9,4 +9,4 @@ tags:
   - standard
 ---
 
-This is a modified blog from Murax.
+This is a modified blog from Murax...
