@@ -59,7 +59,7 @@ layout: default
         {% include page__taxonomy.html %}
         {% include page__date.html %}
 
-        <p><em>Last updated: {{ site.time | date: "%Y-%m-%d" }}</em></p>
+        <p><em>Last updated: {{ site.time | date: "%B %d, %Y" }}</em></p>
       </footer>
 
       {% if page.share %}{% include social-share.html %}{% endif %}
