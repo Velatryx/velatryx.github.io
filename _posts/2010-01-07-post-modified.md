@@ -1,6 +1,6 @@
 ---
 title: "Post: Modified Date"
-Updated: {{ page.date | date: "%B %-d, %Y" }}  
+date: 
 
 categories:
   - Blog
