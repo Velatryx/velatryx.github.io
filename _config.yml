@@ -46,7 +46,7 @@ author:
   bio    : "A curious creature who just created this website!"
   links:
     - label: "Linkedin"
-      icon: "fas fa-fw fa-link"
+      icon: "fas fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/murad-isgandarli-530973292/"
     - label: "TryHackMe"
       image: "/assets/img/tryhackme.logo"
