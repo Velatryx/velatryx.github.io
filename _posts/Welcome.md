@@ -14,6 +14,6 @@ Thanks for visiting my website. As it is my first github 'project', I don't expe
 You can visit my socials in main page.
 Feel free to reach out to me. 
 
-Linkedin: Murad Isgandarli
+#Linkedin: Murad Isgandarli
 
 
