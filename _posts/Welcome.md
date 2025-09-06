@@ -2,6 +2,7 @@
 title: "Welcome to my Website!"
 date: 05/09/2025
 pin: true 
+layout: post
 
 
 categories:
