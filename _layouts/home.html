@@ -6,7 +6,7 @@ layout: archive
 
 <h3 class="archive__subtitle">Featured Post</h3>
 <div class="entries-list">
-  {% assign static_post = site.posts | where: "title", "Your Static Post Title" | first %}
+  {% assign static_post = site.posts | where: "title", "2025-05-09-welcome.md" | first %}
   {% if static_post %}
     {% include documents-collection.html entries=static_post | split: "" | compact type="list" %}
   {% endif %}
