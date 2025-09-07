@@ -4,9 +4,9 @@ layout: archive
 
 {{ content }}
 
-<h3 class="archive__subtitle">Featured Post</h3>
+<h3 class="archive__subtitle">Welcome</h3>
 <div class="entries-list">
-  {% assign static_post = site.posts | where: "title", "Welcome" | first %}
+  {% assign static_post = site.posts | where: "title", "Welcome to my Website!" | first %}
   {% if static_post %}
     {% assign static_array = "" | split: "" %}
     {% assign static_array = static_array | push: static_post %}
@@ -18,7 +18,7 @@ layout: archive
   {{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}
 </h3>
 <div class="entries-list">
-  {% assign recent_posts = site.posts | sort: "date" | reverse | slice: 0,3 %}
+  {% assign recent_posts = site.posts | where_exp: "post", "post.title != 'Welcome to my Website!'" | sort: "date" | reverse | slice: 0,3 %}
   {% if recent_posts.size > 0 %}
     {% include documents-collection.html entries=recent_posts type="list" %}
   {% endif %}
