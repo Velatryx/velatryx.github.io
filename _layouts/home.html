@@ -6,9 +6,11 @@ layout: archive
 
 <h3 class="archive__subtitle">Featured Post</h3>
 <div class="entries-list">
-  {% assign static_post = site.posts | where: "title", "2025-05-09-welcome.md" | first %}
+  {% assign static_post = site.posts | where: "title", "Welcome" | first %}
   {% if static_post %}
-    {% include documents-collection.html entries=static_post | split: "" | compact type="list" %}
+    {% assign static_array = "" | split: "" %}
+    {% assign static_array = static_array | push: static_post %}
+    {% include documents-collection.html entries=static_array type="list" %}
   {% endif %}
 </div>
 
