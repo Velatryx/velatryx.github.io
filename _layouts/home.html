@@ -1,18 +1,14 @@
 ---
-layout: default
+layout: archive
 ---
 
 {{ content }}
 
-<h3 class="archive__subtitle">Welcome</h3>
+<h3 class="archive__subtitle">Featured Post</h3>
 <div class="entries-list">
-  {% assign pinned_posts_pin = site.posts | where_exp: "post", "post.pin == true" %}
-  {% assign pinned_posts_pinned = site.posts | where_exp: "post", "post.pinned == true" %}
-  {% assign pinned_posts = pinned_posts_pin | concat: pinned_posts_pinned %}
-  {% if pinned_posts.size > 0 %}
-    {% include documents-collection.html entries=pinned_posts type="list" %}
-  {% else %}
-    <!-- no pinned posts found -->
+  {% assign static_post = site.posts | where: "title", "Your Static Post Title" | first %}
+  {% if static_post %}
+    {% include documents-collection.html entries=static_post | split: "" | compact type="list" %}
   {% endif %}
 </div>
 
@@ -20,7 +16,7 @@ layout: default
   {{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}
 </h3>
 <div class="entries-list">
-  {% assign recent_posts = site.posts | where_exp: "post", "post.pin != true and post.pinned != true" | sort: "date" | reverse | slice: 0,3 %}
+  {% assign recent_posts = site.posts | sort: "date" | reverse | slice: 0,3 %}
   {% if recent_posts.size > 0 %}
     {% include documents-collection.html entries=recent_posts type="list" %}
   {% endif %}
