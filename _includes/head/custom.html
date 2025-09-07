@@ -1,0 +1,28 @@
+<style>
+/* Only affect the homepage layout so other archives keep default spacing */
+.layout--home .archive__subtitle {
+  margin-bottom: 0.25rem !important;
+}
+
+/* Remove the big gap between a heading and the entries list */
+.layout--home .archive__subtitle + .entries-list {
+  margin-top: 0 !important;
+}
+
+/* Tighten up the entries-list top spacing */
+.layout--home .entries-list {
+  margin-top: 0 !important;
+}
+
+/* Tighten spacing between individual entries (cards) */
+.layout--home .entries-list > * {
+  margin-top: 0.6rem !important;
+}
+
+/* Extra targets (covers different markup variants) */
+.layout--home .entries-list article,
+.layout--home .entries-list .entry,
+.layout--home .entries-list .post {
+  margin-top: 0.6rem !important;
+}
+</style>
