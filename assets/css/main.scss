@@ -8,7 +8,7 @@ search: false
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 .archive__subtitle + .entries-list {
-  margin-top: 0.2rem;   /* space below headings */
+  margin-top: 0;   /* space below headings */
   margin-bottom: 1rem;  /* space between sections */
 }
 
