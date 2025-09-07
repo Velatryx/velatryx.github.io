@@ -1,28 +1,49 @@
 <style>
-/* Only affect the homepage layout so other archives keep default spacing */
+/* HOMEPAGE GAP FIX — target multiple possible selectors used by Minimal Mistakes */
 .layout--home .archive__subtitle {
-  margin-bottom: 0.25rem !important;
+  margin-bottom: 0.15rem !important;
+  padding-bottom: 0 !important;
 }
 
-/* Remove the big gap between a heading and the entries list */
-.layout--home .archive__subtitle + .entries-list {
+.layout--home .archive__subtitle + hr,
+.layout--home hr {
   margin-top: 0 !important;
+  margin-bottom: 0.25rem !important;
+  padding: 0 !important;
+  height: 1px !important;
 }
 
-/* Tighten up the entries-list top spacing */
+/* Remove gap between heading and entries container */
+.layout--home .archive__subtitle + .entries-list,
 .layout--home .entries-list {
   margin-top: 0 !important;
+  padding-top: 0 !important;
 }
 
-/* Tighten spacing between individual entries (cards) */
+/* Tighten spacing between individual entries */
 .layout--home .entries-list > * {
-  margin-top: 0.6rem !important;
+  margin-top: 0.5rem !important;
+  margin-bottom: 0 !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
 }
 
-/* Extra targets (covers different markup variants) */
+/* Cover specific post/entry/card selectors */
 .layout--home .entries-list article,
 .layout--home .entries-list .entry,
-.layout--home .entries-list .post {
-  margin-top: 0.6rem !important;
+.layout--home .entries-list .post,
+.layout--home .entries-list .post-card,
+.layout--home .entries-list .document,
+.layout--home .entries-list .collection__item {
+  margin-top: 0.5rem !important;
+  margin-bottom: 0 !important;
+}
+
+/* extra defensive rules */
+.layout--home .page__content,
+.layout--home .page__content > .entries-list,
+.layout--home .page__content > * {
+  padding-top: 0 !important;
+  margin-top: 0 !important;
 }
 </style>
