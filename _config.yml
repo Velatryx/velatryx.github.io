@@ -1,11 +1,12 @@
 # Welcome to Velatryx's Personal Website!
-title: /home/velatryx
+title: Velatryx
 email: 
 description: A curious creature who just created the website. 
   
 github_username: Velatryx
 minimal_mistakes_skin: default
 search: true
+pin: true
 
 # Build settings
 markdown: kramdown
