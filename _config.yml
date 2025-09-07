@@ -6,7 +6,6 @@ description: A curious creature who just created the website.
 github_username: Velatryx
 minimal_mistakes_skin: default
 search: true
-pinned: true
 
 # Build settings
 markdown: kramdown
