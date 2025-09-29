@@ -5,13 +5,12 @@ layout: archive
 {{ content }}
 
 <ul class="taxonomy__index">
-  {% assign postsInYear = site.posts 
-     | where_exp: "item", "item.hidden != true and item.pinned != true" 
-     | group_by_exp: "post", "post.date | date: '%Y'" %}
+  {% assign postsWithoutHidden = site.posts | where_exp: "item", "item.hidden != true" %}
+  {% assign postsInYear = postsWithoutHidden | where_exp: "item", "item.pinned != true" | group_by_exp: "post", "post.date | date: '%Y'" %}
   {% for year in postsInYear %}
     <li>
       <a href="#{{ year.name }}">
-        <strong>{{ year.name }}</strong> 
+        <strong>{{ year.name }}</strong>
         <span class="taxonomy__count">{{ year.items | size }}</span>
       </a>
     </li>
@@ -19,9 +18,8 @@ layout: archive
 </ul>
 
 {% assign entries_layout = page.entries_layout | default: 'list' %}
-{% assign postsByYear = site.posts 
-   | where_exp: "item", "item.hidden != true and item.pinned != true" 
-   | group_by_exp: "post", "post.date | date: '%Y'" %}
+{% assign postsWithoutHidden = site.posts | where_exp: "item", "item.hidden != true" %}
+{% assign postsByYear = postsWithoutHidden | where_exp: "item", "item.pinned != true" | group_by_exp: "post", "post.date | date: '%Y'" %}
 {% for year in postsByYear %}
   <section id="{{ year.name }}" class="taxonomy__section">
     <h2 class="archive__subtitle">{{ year.name }}</h2>
