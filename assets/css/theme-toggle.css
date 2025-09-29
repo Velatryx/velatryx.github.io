@@ -1,0 +1,61 @@
+/* Theme variables */
+:root {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --link-color: #0d6efd; /* bootstrap primary */
+}
+
+/* Dark mode via system preference */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: #121212;
+    --text-color: #f1f1f1;
+    --link-color: #66aaff;
+  }
+}
+
+/* Explicit dark theme */
+.dark-theme {
+  --bg-color: #121212;
+  --text-color: #f1f1f1;
+  --link-color: #66aaff;
+}
+
+/* Apply styles with smooth transition */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+a, .nav-link {
+  color: var(--link-color);
+  transition: color 0.4s ease;
+}
+
+.navbar, .card, .footer, .header {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+/* Toggle button styling */
+.theme-toggle-container {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 1000;
+}
+
+#theme-toggle-btn {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+#theme-toggle-btn:hover {
+  transform: rotate(20deg) scale(1.1);
+}
