@@ -13,6 +13,12 @@
     {% include_cached skip-links.html %}
     {% include_cached masthead.html %}
 
+    <!-- Theme Toggle Button -->
+    <button id="theme-toggle" aria-label="Toggle dark mode">
+      <span class="icon sun">☀️</span>
+      <span class="icon moon">🌙</span>
+    </button>
+
     <div class="initial-content">
       {{ content }}
       {% include after-content.html %}
@@ -30,9 +36,6 @@
         {% include_cached footer.html %}
       </footer>
     </div>
-
-    <!-- 🌙 Theme Toggle Button -->
-    <button id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
 
     {% include scripts.html %}
     <script src="{{ '/assets/js/theme-toggle.js' | relative_url }}"></script>
